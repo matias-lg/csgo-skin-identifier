@@ -4,7 +4,7 @@
 # 3. Save images to a folder
 # 4. Rename files with a counter, each file will have the label as the folder it is in
 # 5. Create a CSV file with the filename and label
-CSGO_SKIN_NAMES: list[str] = []
+CSGO_SKIN_NAMES: list[tuple[str, str, str]] = []
 
 ak_names = [
     "Redline",
@@ -18,7 +18,7 @@ ak_names = [
     "Wild Lotus",
     "The Empress",
     "Fuel Injector",
-    ]
+]
 
 awp_names = [
     "Redline",
@@ -52,7 +52,7 @@ m4a1_names = [
     "Chantico's Fire",
     "Blue Phosphor",
     "Decimator",
-    "Emphorosaur-S"
+    "Emphorosaur-S",
 ]
 
 galil_names = [
@@ -88,11 +88,11 @@ usp_names = [
     "Monster Mashup",
 ]
 
-CSGO_SKIN_NAMES.extend([f"AK-47 | {name}" for name in ak_names] )
-CSGO_SKIN_NAMES.extend([f"AWP | {name}" for name in awp_names] )
-CSGO_SKIN_NAMES.extend([f"M4A4 | {name}" for name in m4a4_names] )
-CSGO_SKIN_NAMES.extend([f"M4A1-S | {name}" for name in m4a1_names] )
-CSGO_SKIN_NAMES.extend([f"Galil AR | {name}" for name in galil_names] )
-CSGO_SKIN_NAMES.extend([f"SSG 08 | {name}" for name in ssg08_names] )
-CSGO_SKIN_NAMES.extend([f"Glock-18 | {name}" for name in glock_names] )
-CSGO_SKIN_NAMES.extend([f"USP-S | {name}" for name in usp_names] )
+CSGO_SKIN_NAMES.extend([("ak", name, "AK-47") for name in ak_names])
+CSGO_SKIN_NAMES.extend([("awp", name, "AWP") for name in awp_names])
+CSGO_SKIN_NAMES.extend([("m4a4", name, "M4A4") for name in m4a4_names])
+CSGO_SKIN_NAMES.extend([("m4a1s", name, "M4A1-S") for name in m4a1_names])
+CSGO_SKIN_NAMES.extend([("galil", name, "Galil AR") for name in galil_names])
+CSGO_SKIN_NAMES.extend([("scout", name, "SSG 08") for name in ssg08_names])
+CSGO_SKIN_NAMES.extend([("glock", name, "Glock-18") for name in glock_names])
+CSGO_SKIN_NAMES.extend([("usp", name, "USP-S") for name in usp_names])
