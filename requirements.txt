@@ -1,0 +1,14 @@
+torch
+Pillow
+opencv-python
+numpy 
+scipy
+scikit-learn
+matplotlib
+ipykernel
+
+# for downloading images
+icrawler
+requests
+lxml
+bs4
