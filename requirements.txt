@@ -1,4 +1,5 @@
 torch
+torchvision
 Pillow
 opencv-python
 numpy 
@@ -8,6 +9,7 @@ matplotlib
 ipykernel
 
 # for downloading images
+gdown
 icrawler
 requests
 lxml

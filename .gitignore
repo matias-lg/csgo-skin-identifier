@@ -1,5 +1,6 @@
 .vscode
 .venv
 dataset
+dataset2
 __pycache__
 */__pycache__
