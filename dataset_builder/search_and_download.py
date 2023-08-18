@@ -12,9 +12,9 @@ def search_and_save_term(search_term: str, output_dir, max_downloads: int = 100)
     google_crawler.crawl(keyword=search_term, max_num=max_downloads)
 
 if __name__ == "__main__":
-    dataset_dir = os.path.join(os.getcwd(), "dataset")
-    if not os.path.exists(dataset_dir):
-        os.mkdir(dataset_dir)
+    output_dir = os.path.join(os.getcwd(), "downloaded_images")
+    if not os.path.exists(output_dir):
+        os.mkdir(output_dir)
 
     for skin_name in CSGO_SKIN_NAMES:
         print(skin_name)

@@ -1,6 +1,7 @@
 .vscode
 .venv
 dataset
-dataset2
+downloaded_images
+informe*
 __pycache__
 */__pycache__

@@ -3,6 +3,7 @@ torchvision
 Pillow
 opencv-python
 numpy 
+seaborn
 scipy
 scikit-learn
 matplotlib
